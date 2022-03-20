@@ -9,13 +9,304 @@
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <div class="container">
-        <header>
-            аптпатв
-        </header>
-    </div>
+    <header class="header">
+        <div class="header__inner">
+            <div class="header__top">
+                <div class="container">
+                    <div class="header__content">
+                        <a href="/">
+                            <picture class="logo logo--header">
+                                <source media="(max-width: 992px)" srcset="assets/img/logo--mobile.svg">
+                                <img class="logo__img" src="assets/img/logo.svg" alt="logo">
+                            </picture>
+                        </a>
+                        <div class="location location--header">
+                            <a href="" class="location__city">
+                                Москва
+                            </a>
+                            <span class="location__local">
+                                <a href="#" target="_blank">7 клиник</a> рядом с вами!
+                            </span>
+                        </div>
+                        <div class="icons icons--header">
+                            <a href="viber://chat?number=74955404803" class="icon icon--social">
+                                <img src="assets/img/icons/call.svg" alt="viber">
+                            </a>
+                            <a href="" class="icon icon--social">
+                                <img src="assets/img/icons/tg.svg" alt="telegram">
+                            </a>
+                            <a href="whatsapp://send?phone=74955404803" class="icon icon--social">
+                                <img src="assets/img/icons/whatsapp.svg" alt="whatsapp">
+                            </a>
+                        </div>
+                        <div class="contacts contacts--top">
+                            <span>Запись на приём</span>
+                            <a href="tel:84955404803" class="phone phone--header">
+                                8 (495) 540-48-03
+                            </a>
+                            <a href="mailto:medgorod@bk.ru" class="mail">medgorod@bk.ru</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header__bottom">
+                <div class="container">
+                    <div class="header__content">
+                        <a href="/" class="icon home">
+                            <img src="assets/img/icons/home.svg" alt="home">
+                        </a>
+                        <div class="hamburger">
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                        </div>
+                        <nav class="menu">
+                            <div class="hamburger">
+                                <span class="line"></span>
+                                <span class="line"></span>
+                                <span class="line"></span>
+                            </div>
+                            <ul class="menu__list">
+                                <li class="menu__item menu__item--main">
+                                    <div class="catalog-hamb">
+                                        <span class="line"></span>
+                                        <span class="line line--serv">
+                                            <span></span>
+                                            <span class="dot"></span>
+                                        </span>
+                                        <span class="line"></span>
+                                    </div>
+                                    <a href="#" class="menu__link menu__link--main">Услуги</a>
+                                </li>
+                                <li class="menu__item"><a href="#" class="menu__link">О клинике</a></li>
+                                <li class="menu__item"><a href="#" class="menu__link">Врачи</a></li>
+                                <li class="menu__item"><a href="#" class="menu__link">Цены</a></li>
+                                <li class="menu__item"><a href="#" class="menu__link">Отзывы</a></li>
+                                <li class="menu__item"><a href="#" class="menu__link">Акции</a></li>
+                                <li class="menu__item"><a href="#" class="menu__link">Клиники</a></li>
+                            </ul>
+                        </nav>
+                        <div class="search d-none d-xl-block">
+                            <input class="search__input" type="search" name="search" id="">
+                            <img src="assets/img/icons/loupe.svg" alt="loupe" class="search__icon icon">
+                        </div>
+                        <button class="btn">Обратный звонок</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
     <main>
-        
+        <section class="section section--top bg-suplightgreen stocks">
+            <div class="section__inner">
+                <div class="container">
+                    <nav class="breadcrumbs">
+                        <a href="/" class="breadcrumbs__btn">
+                            <img src="assets/img/icons/arrow-left.svg" alt="">
+                        </a>
+                        <ul class="breadcrumbs__list">
+                            <li class="breadcrumbs__item"><a href="/" class="breadcrumbs__link">Главная</a></li>
+                            <li class="breadcrumbs__item"><a href="/" class="breadcrumbs__link">Акции</a></li>
+                        </ul>
+                    </nav>
+                    <div class="row"> 
+                        <div class="col-md-6">
+                            <h1 class="section__title section__title--l2 stocks__title">Акции и спецпредложения</h1>
+                            <div class="section__subtitle">
+                                В данном разделе представлены акции от сети клиник «Медгород», представленная здесь информация
+                                полностью актуальна.
+                            </div>
+                        </div>
+                        <div class="col-md-6 d-flex justify-content-end">
+                            <img class="section__img" src="assets/img/squares.png" alt="squares">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="section stockes">
+            <div class="container">
+                <div class="stocks__slider slider">
+                    <div>
+                        <article class="stock">
+                            <div class="stock__inner">
+                                <div class="row">
+                                    <div class="col-xl-6 col-md-8 col-12">
+                                        <div class="stock__info">
+                                            <img src="assets/img/icons/stock.svg" alt="stock">
+                                            <h2 class="section__title section__title--big stock__title">
+                                                Он-лайн консультация <br> любого врача-терапевта
+                                            </h2>
+                                            <footer class="stock__footer">
+                                                <div class="price">
+                                                    <div class="price__old">
+                                                        <span>1 700 руб.</span>
+                                                        <div class="price__sale">
+                                                            -30%
+                                                        </div>
+                                                    </div>
+                                                    <div class="price__actual">
+                                                        1 190 руб.
+                                                    </div>
+                                                </div>
+                                                <span class="stock__text">Акция действует до 30.09.2021 г.</span>
+                                                <div class="stock__buttons">
+                                                    <a href="/" target="_blank" class="btn stock__btn">Записаться</a>
+                                                    <a href="/" target="_blank" class="btn btn--green stock__btn">Подробнее</a>
+                                                </div>
+                                            </footer>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 col-md-4 d-md-block d-none">
+                                        <img src="assets/img/slide-1.png" alt="man with laptop" class="stock__img">
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div>
+                        <article class="stock">
+                            <div class="stock__inner">
+                                <div class="row">
+                                    <div class="col-xl-6 col-md-8 col-12">
+                                        <div class="stock__info">
+                                            <img src="assets/img/icons/stock.svg" alt="stock">
+                                            <h2 class="section__title section__title--big stock__title">
+                                                Расшифровка анализов <br> у любого доктора
+                                            </h2>
+                                            <footer class="stock__footer">
+                                                <div class="price">
+                                                    <div class="price__old">
+                                                        <span>800 руб.</span>
+                                                        <div class="price__sale">
+                                                            -30%
+                                                        </div>
+                                                    </div>
+                                                    <div class="price__actual">
+                                                        1 190 руб.
+                                                    </div>
+                                                </div>
+                                                <span class="stock__text">Акция действует до 30.09.2021 г.</span>
+                                                <div class="stock__buttons">
+                                                    <a href="/" target="_blank" class="btn stock__btn">Записаться</a>
+                                                    <a href="/" target="_blank"
+                                                        class="btn btn--green stock__btn">Подробнее</a>
+                                                </div>
+                                            </footer>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 col-md-4 d-md-block d-none">
+                                        <img src="assets/img/slide-2.png" alt="man with laptop" class="stock__img">
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div>
+                        <article class="stock">
+                            <div class="stock__inner">
+                                <div class="row">
+                                    <div class="col-xl-6 col-md-8 col-12">
+                                        <div class="stock__info">
+                                            <img src="assets/img/icons/stock.svg" alt="stock">
+                                            <h2 class="section__title section__title--big stock__title">
+                                                ЭКГ + ЭХО-КГ
+                                            </h2>
+                                            <footer class="stock__footer">
+                                                <div class="price">
+                                                    <div class="price__old">
+                                                        <span>4 150 руб.</span>
+                                                        <div class="price__sale">
+                                                            -30%
+                                                        </div>
+                                                    </div>
+                                                    <div class="price__actual">
+                                                        2 900 руб.
+                                                    </div>
+                                                </div>
+                                                <span class="stock__text">Акция действует до 30.09.2021 г.</span>
+                                                <div class="stock__buttons">
+                                                    <a href="/" target="_blank" class="btn stock__btn">Записаться</a>
+                                                    <a href="/" target="_blank"
+                                                        class="btn btn--green stock__btn">Подробнее</a>
+                                                </div>
+                                            </footer>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 col-md-4 d-md-block d-none">
+                                        <img src="assets/img/slide-3.png" alt="man with laptop"
+                                            class="stock__img stock__img--float">
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div>
+                        <article class="stock">
+                            <div class="stock__inner">
+                                <div class="row">
+                                    <div class="col-xl-6 col-md-8 col-12">
+                                        <div class="stock__info">
+                                            <img src="assets/img/icons/stock.svg" alt="stock">
+                                            <h2 class="section__title section__title--big stock__title">
+                                                УЗИ
+                                            </h2>
+                                            <h3 class="stock__subtitle">
+                                                -50% на вторую локацию
+                                            </h3>
+                                            <footer class="stock__footer">
+                                                <span class="stock__text">Акция действует до 30.09.2021 г.</span>
+                                                <div class="stock__buttons">
+                                                    <a href="/" target="_blank" class="btn stock__btn">Записаться</a>
+                                                    <a href="/" target="_blank"
+                                                        class="btn btn--green stock__btn">Подробнее</a>
+                                                </div>
+                                            </footer>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 col-md-4 d-md-block d-none">
+                                        <img src="assets/img/slide-4.png" alt="woman-2" class="stock__img">
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div>
+                        <article class="stock">
+                            <div class="stock__inner">
+                                <div class="row">
+                                    <div class="col-xl-6 col-md-8 col-12">
+                                        <div class="stock__info">
+                                            <img src="assets/img/icons/stock.svg" alt="stock">
+                                            <h2 class="section__title section__title--big stock__title">
+                                                Прием любого врача 
+                                            </h2>
+                                            <h3 class="stock__subtitle">+ УЗИ + ЭКГ</h3>
+                                            <footer class="stock__footer">
+                                                <div class="price">
+                                                    <div class="price__actual">
+                                                        4 200 руб.
+                                                    </div>
+                                                </div>
+                                                <span class="stock__text">Акция действует до 30.09.2021 г.</span>
+                                                <div class="stock__buttons">
+                                                    <a href="/" target="_blank" class="btn stock__btn">Записаться</a>
+                                                    <a href="/" target="_blank"
+                                                        class="btn btn--green stock__btn">Подробнее</a>
+                                                </div>
+                                            </footer>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 col-md-4 d-md-block d-none">
+                                        <img src="assets/img/slide-5.png" alt="man" class="stock__img">
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
     <script src="js/app.min.js"></script>
 </body>
