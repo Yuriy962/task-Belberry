@@ -150,7 +150,6 @@ $grey: #878787;
 /* main styles */
 *{
     box-sizing: border-box;
-    font-family: 'Proxima Nova',sans-serif;
     transition: .3s;
 }
 html{
@@ -161,6 +160,8 @@ body{
     flex-direction: column;
     height: 100vh;
     background-color: #fff;
+    font-family: 'Proxima Nova',
+    sans-serif;
 }
 img{
     max-width: 100%;
@@ -173,9 +174,17 @@ a{
         color: $lightGreen;
     }
 }
-input{
+input, button{
     border: none;
     outline: none;
+    &:hover,
+    &:active,
+    &:focus,
+    &:focus-visible,
+    &:focus-within{
+       border: none;
+       outline: none;
+    }
 }
 
 .container{
@@ -412,13 +421,20 @@ input{
 }
 .section{
     &--top{
+        color: $green;
         .section__inner{
             position: relative;
             padding-top: 200px;
             padding-bottom: 150px;
+            font-family: 'Museo Sans Cyrl';
+        }
+        .section__title,
+        .section__subtitle{
+            color: inherit;
         }
     }
     &__title{
+        font-family: inherit;
         &--big{
             font-size: 48px;
             font-weight: 700;
@@ -694,9 +710,7 @@ input{
 }
 .stocks{
     position: relative;
-    font-family: 'Museo Sans Cyrl';
     color: #014751;
-    overflow: hidden;
     &__slider{
         position: relative;
         top: -160px;
